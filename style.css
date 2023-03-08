@@ -38,7 +38,7 @@ header input{
 #menu{
     width: 100%;
     padding: 20px;
-    margin-top: 80px;
+    margin-top: 65px;
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr 1fr;
     text-align: center;
@@ -65,16 +65,27 @@ header input{
 }
 .colunas-2{
     display: grid; 
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 2fr;
 }
 section{
     padding: 10%;
 }
 .produto{
-    background: yellow;
+    text-align: center;
 }
 .produto img{
-    width: 70px;
-    height: 100px;
+    width: 100px;
+    height: 175px;
     border: 1px solid red;
+}
+#mais_opcoes{
+    margin-top: 20px;
+}
+details ul{
+    margin-top: 10px;
+}
+.parte2{
+    background: blue;
+    width: 100%;
+    height: 100%;
 }
