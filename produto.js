@@ -88,7 +88,7 @@ produto[0] = {
     Porcentagem: "25%",
     Valor_real: "R$75,99",
     Valor_antigo: "R$99,99",
-    Estrelas: 3
+    Estrelas: 5
 }
 produto[1] = {
     Img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyS0R5V_1_kKAr26UlJ9G1Km86K3pktsbRyw&usqp=CAU",
@@ -97,7 +97,7 @@ produto[1] = {
     Porcentagem: "20%",
     Valor_real: "R$16,99",
     Valor_antigo: "R$19,99",
-    Estrelas: 5
+    Estrelas: 4
 }
 produto[2] = {
     Img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd31Ec6waX6V3UlrcJpUPjzP4wJ4JykNRU1g&usqp=CAU",
