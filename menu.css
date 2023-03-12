@@ -1,0 +1,156 @@
+/* Por Padrão  */
+* { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    outline: 0; 
+    list-style: none; 
+    box-sizing: border-box;
+}
+
+/* Parte de cima - inicio */
+header{
+    width: 100%;
+    height: 8%;      
+    padding:2%;
+    position: center;
+    top: 0px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 10px 5px 10px #000;
+    position: fixed;
+    z-index: 0;
+}
+#botaoMenu{
+    position:absolute;
+    left:10%;
+    font-size: 20px;
+    margin-top: 2.5%;
+}
+header h2{
+    margin-left: 10%;
+    color: #51ff2afa;
+    -webkit-text-stroke-width: 0.75px;
+    -webkit-text-stroke-color: #000;
+    margin-top: 1.5%;
+    left:25%;
+    position:absolute;
+}
+/* Parte de cima - Fim */
+
+/* Início Menu */
+.cobreMenu{
+    background: rgba(10, 10, 10, .8);
+    height: 100%;
+    position: fixed;
+    transition: .4s ease-in-out;
+    top: 0px;
+    z-index: 998;
+}
+.cobreMenu.open{
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px); 
+    -webkit-backdrop-filter: blur(6px);
+}
+.sidebar { 
+    position: absolute;
+    top:0px;
+    left: -30%;
+    width: 30%; 
+    height: 100vh;
+    background: #1f1f1f;
+    box-shadow: 0 8px 32px rgb(2, 4, 24); 
+    border-right: 2px solid rgba(255, 255, 255, .09); 
+    transition: .4s ease-in-out;
+    z-index: 1000;
+} 
+.sidebar.open { 
+    left: 0%;
+}
+.sidebar.open .nav-title { 
+    opacity: 1; 
+    transition: .4s; 
+    transition-delay: .2s;
+    color: #51ff2afa;
+}
+.sidebar nav .nav-item { 
+    cursor: pointer;
+    align-items: center;
+    border-radius: 4px;
+    position: center;
+    margin: 15% 0 0 0;
+    padding: 2px; 
+    color: #fff; 
+    transition: .3s;
+}
+.sidebar ul{
+    width: 90%;
+    margin: 5px 5% 0 5%;
+    padding: 5px;
+}
+.sidebar nav .nav-item{
+    align-items: center; 
+    justify-items: center;
+    font-size: 13px;
+}
+.sidebar.open nav .nav-item { 
+    margin: 10px 0 0 0;
+    font-size: 12px;
+    display: flex;
+}
+.sidebar nav .nav-item.active { 
+    background: #960500;
+}
+.sidebar nav .nav-item:hover { 
+    background: rgba(255, 255, 255, .1);
+} 
+.sidebar nav .nav-item i { 
+    font-size: 20px;
+} 
+.sidebar.open nav .nav-item span { 
+    opacity: 1; 
+    pointer-events: visible; 
+    transition: .4s; 
+    transition-delay: .2s;
+    margin-left: 5px;
+}
+.sidebar a{
+    text-decoration: none;
+}
+.sidebar hr { 
+    width: 100%; 
+    height: 2px; 
+    border-radius: 3px; 
+    margin: 20px 0 15px; 
+    background: rgba(255, 255, 255, .1); 
+    opacity: 0;
+} 
+.sidebar.open hr { 
+    opacity: 1; 
+    transition: .4s;
+} 
+.c_menu{
+    margin-top: 20px;
+}
+.c_menu img{
+    max-height: 40px;
+    margin-left:25px;
+}
+.c_menu i{
+    float: right;
+    margin: 10px 10px 0 0;
+}
+.sidebar.open .c_menu i{
+    transform: rotate(180deg);
+    float: right;
+    margin: 10px 10px 0 0;
+    color: #fff;
+}
+.ativo{
+    background-color: #ffdc55;
+}
+a .nav-item.ativo{
+    color: #000;
+}
+/* Fim Menu */

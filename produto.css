@@ -1,0 +1,122 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+/* Parte da esquerda: */
+/* O produto */
+#categoriasProduto{
+    display: grid;
+    padding: 5%;
+    width: 100%;
+    margin-top: 11%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: 1px solid #000;
+}
+#categoriasProduto div{
+    padding: 10px;    
+    border: 3px solid #000;
+    margin-right: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+#categoriasProduto label{
+    font-size: 13px;
+    font-weight: 500;
+}
+.actived{
+    background: #0ea717;
+}
+.colunas-3{
+    display: grid;
+    grid-template-columns: 4.5fr 4.5fr;
+}
+.produtos{
+    padding: 7%;
+}
+.produto{
+    margin-left: 4%;
+    text-align: center;
+    background: blue;
+    padding: 15px;
+    border-radius: 15px;
+}
+.produto h4{
+    color: #ff0;
+}
+.produto p{
+    font-size: 14px;
+    color: #ff0;
+}
+.produto img{
+    width: 85%;
+}
+#mais_opcoes{
+    margin-top: 20px;
+}
+details ul{
+    margin-top: 10px;
+}
+/* Fim da parte da esquerda */
+
+/* Parte da direita: */
+/* Informações de preço do produto */
+.parte2{
+    width: 100%;
+    height: 100%;
+    margin-top:5px;
+    margin-right: 4%;
+}
+#item{
+    padding: 10%;
+}
+#precos{
+    
+}
+.porcentagem{
+    font-size: 14px;
+    color: #0003ff;
+}
+#valor{
+    
+}
+.valor_real{
+    color: #3bbb1f;
+}
+.valor_antigo{
+    text-decoration: line-through;
+    font-size: 10px;
+}
+#estrelas{
+    text-align: center;
+    margin: 5px 0 5px 0;
+}
+#estrelas ul{
+    display:flex;
+}
+#estrelas ul li i{
+    color: #ffc70071;
+}
+#item button{
+    width: 100%;
+    padding: 10px;
+    background: green;
+    color: #fff;
+}
+#item button:hover{
+    background: #006501;
+    color: #fff;
+}
+#setasProdutos{
+    text-align:center;
+}
+.trocaProdutos{
+    text-align:center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#trocaProdutos i{
+    font-size: 160%;
+    padding: 5px;
+    margin: 10px;
+}
+/* Fim da parte da direita */
