@@ -4,36 +4,89 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1"> 	
-        <title>Site-Teste</title>
-        <link rel="stylesheet" href="./style.css">
+        <title>Produtos</title>
+        <link rel="stylesheet" href="./menu.css">
+        <link rel="stylesheet" href="./produto.css">
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+        
     </head> 
     
     <body>
         <header>
-            <img src="./Img/images().png" alt="">
-            <input type="search" placeholder="Pesquisar">
-             
-        </header>
-        <ul id="menu">
-                <a href=""><li class="active">Produtos</li></a>
-                <a href=""><li>Carrinho</li></a>
-                <a href=""><li>Menu</li></a>
-                <a href=""><li>Contato</li></a>
-        </ul>
-        <div class="colunas-2">
-            <section>
-                <div class="parte1">
-                   <p>Fornecedor: Babi du Biruleibe</p>
-                   <button>Entrar em contato</button> 
+            <div class="cobreMenu"></div>
+            <div class="sidebar">   
+                <div class="c_menu">
+                    <img src="./Img/logo.jpg" alt="">
+                    <i class="bx bx-arrow-back"></i>
                 </div>
                 </br>
+                <nav>
+                    <div class="nav-title"> Encorpe Beleza </div>
+                    <ul> 
+                        <a href="#">
+                            <li class="nav-item ativo"> 
+                               <i class="bx bxs-shopping-bag"></i>                        
+                                <span>Produtos</span>
+                            </li>
+                        </a>
+                        <a href="./maisVendidos.html">
+                            <li class="nav-item">
+                                <i class="bx bxs-objects-vertical-bottom"></i> 
+                                <span>Mais Vendidos</span>
+                            </li>
+                        </a>
+                        <a href="./carrinho.html">
+                            <li class="nav-item"> 
+                                <i class="bx bxs-cart"></i> 
+                                <span>Carrinho</span> 
+                            </li>
+                        </a>  
+                    </ul>
+                    <hr>
+                    <div class="nav-title"> Suporte </div> 
+                    <ul> 
+                        <a href="./quemSomos.html">
+                            <li class="nav-item"> 
+                                <i class="bx bxs-help-circle"></i> 
+                                <span>Quem Somos</span>
+                            </li>
+                        </a>
+                        <a href="./contato.html">
+                            <li class="nav-item"> 
+                                <i class="bx bxs-contact"></i> 
+                                <span>Contato</span> 
+                            </li>  
+                        </a>
+                    </ul> 
+                </nav> 
+            </div>
+            <div id="botaoMenu">
+                <i class="bx bx-menu"></i>
+            </div>
+            <h2>Encorpe Beleza</h2>
+             
+        </header>
+        <section id="categoriasProduto">
+            <div class="actived">
+                <label>Ferramentas</label>
+            </div>
+            <div>
+                <label>Vestimentas</label>
+            </div>
+            <div>
+                <label>Tecnologia</label>
+            </div>
+            <div>
+                <label>Móveis</label>
+            </div>
+        </section>
+        <div class="colunas-3">
+            <section class="produtos">   
                 <div class="produto">
-                    <icon></icon>
-                    <icon></icon>
-                    <img src="./Img/images().png" alt="">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtWMUeeS5Re1KaQ1AKD_BVJsa-8SbvMFqulw&usqp=CAU" alt="">
                     </br></br>
-                    <h3>SOBRE:</h3>
-                    <p>bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla </p>
+                    <h4>SOBRE:</h4>
+                    <p>Faca ultratecnologia, melhor não tem, pode confiar</p>
                 </div>
                 </br>
                 <div id="mais_opcoes">
@@ -45,14 +98,7 @@
                         </ul>
                     </details>
                     </br>
-                    <details>
-                        <summary><icon>▶️</icon><i>Mais Vendidos</i></summary>    
-                        <ul>
-                            <li>1-)</li>
-                            <li>2-)</li>
-                        </ul>
-                    </details>
-                    </br>
+                    
                     <details>
                         <summary><icon>▶️</icon><i>Recomendações</i></summary>
                         <ul>
@@ -68,27 +114,47 @@
                     <div id="item">
                         <h2>Faca</h2>
                         <div id="precos">
-                            <label>%99</label>
+                            <label class="porcentagem">25%</label>
                             <div id="valor">
-                                <label class="valor_maior">R$98,</label>
-                                <label class="valor_menor">99</label>
-                                <label class="valor_maior">R$100,</label>
-                                <label class="valor_menor">99</label>
+                                <label class="valor_real">R$75,99</label>
+                                <label class="valor_antigo">R$100,99</label>
                             </div>
                         </div>
                         <div id="estrelas">
-                            <p>Estrelinhas</p>
+                            <ul> 
+                                <li> 
+                                    <i class="bx bxs-star" title="Bad"></i> 
+                                </li> 
+                                <li> 
+                                    <i class="bx bxs-star" title="Poor"></i> 
+                                </li> 
+                                <li> 
+                                    <i class="bx bxs-star" title="OK"></i> 
+                                </li> 
+                                <li> 
+                                    <i class="bx bxs-star" title="Good"></i> 
+                                </li> 
+                                <li> 
+                                    <i class="bx bxs-star" title="Excellent"></i> 
+                                </li> 
+                            </ul>
                         </div>
                         <button>COMPRAR</button>
                     </div>
-                    <div class="comentarios">
-                        <input type="text" placeholder="Comentar...">
-                        <div id="comentarios_lancados">
-                            
+                    <section id="setasProdutos">
+                        <div class="trocaProdutos">
+                            <div class="arrow-left">
+                                <i class="bx bxs-left-arrow-circle"></i>
+                            </div>
+                            <div class="arrow-right">
+                                <i class="bx bxs-right-arrow-circle"></i>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                    </section>
+               </div>
             </section>
         </div>
     </body>
+    <script src="./produto.js"></script>
+    <script src="./menu.js"></script>
 </html>
